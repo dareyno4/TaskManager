@@ -2,7 +2,7 @@ const mongoose = require('mongoose'); // Import mongoose for MongoDB object mode
 
 const connectDB = async() => { // Function to connect to MongoDB
     try {
-        await mongoose.connect(process.env.MANGO_URI, { // Connect to MongoDB using the URI from environment variables
+        await mongoose.connect(process.env.MONGO_URI, { // Connect to MongoDB using the URI from environment variables
             useNewUrlParser: true, // Use the new URL parser
             useUnifiedTopology: true, // Use the new unified topology engine
         });
